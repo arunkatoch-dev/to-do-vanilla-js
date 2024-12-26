@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 25rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 1rem 0.5rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.container .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: blueviolet;
+  color: white;
+}
+.container .heading span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container .content {
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.4rem 0;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.tasksContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.tasksContainer input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.tasksContainer button {
+  padding: 0.5rem 1rem;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.tasksContainer button:hover {
+  background-color: rgb(60, 10, 107);
+}
+
+.tasks {
+  width: 100%;
+  height: 20rem;
+  overflow-y: auto;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.tasks .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.tasks .task span {
+  font-size: 1.3rem;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.done {
+  background-color: rgb(4, 66, 4);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.done:hover {
+  background-color: rgb(4, 117, 4);
+}
+.remove {
+  background-color: rgb(150, 9, 9);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+.remove:hover {
+  background-color: rgb(240, 11, 11);
+}
+
+.deleteContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem;
+  border-top: 1px solid gray;
+}
+
+.deleteContainer button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(170, 26, 26);
+  color: white;
+  border: none;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.deleteContainer button:hover {
+  background-color: rgb(233, 0, 0);
+}

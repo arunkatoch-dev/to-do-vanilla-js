@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do's App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading"><span>To Do's</span></div>
+      <div class="content">
+        <div class="tasksContainer">
+          <input
+            type="text"
+            id="input"
+            placeholder="Add a new task"
+            autocomplete="off"
+          />
+          <button id="add">Add</button>
+        </div>
+        <div class="tasks" id="tasks"></div>
+        <div class="deleteContainer">
+          <button id="removeAll">Remove All</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
